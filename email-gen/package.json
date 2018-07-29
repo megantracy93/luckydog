@@ -1,0 +1,14 @@
+{
+  "name": "email-gen",
+  "version": "0.1.0",
+  "description": "Generator for Driver Emails",
+  "main": "index.js",
+  "repository": "github.com/megantracy93/luckydog",
+  "author": "Megan Tracy",
+  "license": "Unlicense",
+  "private": true,
+  "dependencies": {
+    "express": "^4.16.3",
+    "properties-reader": "^0.0.16"
+  }
+}
