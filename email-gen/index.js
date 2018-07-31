@@ -6,7 +6,6 @@ const app = express();
 app.get('/', (req, res) => {
   const emailFn = generateEmail();
   emailFn.then((email) => {
-    console.log(email);
     res.send(email);
   });
 });
