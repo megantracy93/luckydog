@@ -1,0 +1,23 @@
+.email_link {
+  color: #15c;
+  text-decoration: underline
+}
+
+ul.email_list {
+  display: block;
+  padding-left: 40px
+}
+
+ul.email_list li.email_list_item {
+  display: list-item;
+  list-style-type: disc
+}
+
+.highlight {
+  background-color: #ff0
+}
+
+#boarding_notes {
+  display: block;
+  white-space: pre-wrap
+}

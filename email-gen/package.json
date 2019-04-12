@@ -1,15 +1,37 @@
 {
   "name": "email-gen",
-  "version": "0.1.0",
-  "description": "Generator for Driver Emails",
+  "version": "1.0.0",
+  "description": "my description",
   "main": "index.js",
-  "repository": "github.com/megantracy93/luckydog",
-  "author": "Megan Tracy",
-  "license": "Unlicense",
-  "private": true,
+  "engines": {
+    "node": "9.3.0",
+    "npm": "5.6.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.0.1",
+    "cookie-session": "^2.0.0-beta.3",
     "express": "^4.16.3",
-    "properties-reader": "^0.0.16",
-    "q": "^1.5.1"
+    "googleapis": "^27.0.0",
+    "mongoose": "^5.3.1",
+    "nodemon": "^1.18.4",
+    "passport": "^0.4.0",
+    "passport-google-oauth20": "^1.0.0",
+    "sendgrid": "^5.2.3",
+    "stripe": "^6.12.1"
+  },
+  "devDependencies": {
+    "curl": "^0.1.4",
+    "jquery": "^3.3.1",
+    "jsdom": "^13.0.0"
   }
 }

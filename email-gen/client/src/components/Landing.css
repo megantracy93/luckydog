@@ -1,0 +1,11 @@
+.landing_content {
+  padding: 3px
+}
+
+.tab_row {
+  margin-bottom: 0px
+}
+
+#tab_selected a {
+  color: #ee6e73
+}
