@@ -1,0 +1,25 @@
+{
+  "name": "email-gen",
+  "version": "0.1.0",
+  "description": "Generator for Driver Emails",
+  "main": "index.js",
+  "repository": "github.com/megantracy93/luckydog",
+  "author": "Megan Tracy",
+  "license": "Unlicense",
+  "private": true,
+  "dependencies": {
+    "ajax": "0.0.4",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "firebase": "^5.4.1",
+    "firebaseui": "^3.4.0",
+    "googleapis": "^27.0.0",
+    "papaparse": "^4.6.0",
+    "properties-reader": "^0.0.16",
+    "q": "^1.5.1"
+  },
+  "scripts": {
+    "start": "nodemon index.js",
+    "start:debug": "node --inspect=0.0.0.0:9229 index.js"
+  }
+}
